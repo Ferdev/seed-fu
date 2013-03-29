@@ -22,7 +22,6 @@ end
 
 class SeededModel < ActiveRecord::Base
   validates_presence_of :title
-  attr_protected :first_name
   attr_accessor :fail_to_save
 
   before_save { false if fail_to_save }
